@@ -1,47 +1,38 @@
 package com.parser;
 
-import java.io.*;
-import java.util.Map;
+import java.io.FileInputStream;
+import java.io.IOException;
 
-import org.w3c.dom.*;
-import org.xml.sax.*;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
-import javax.swing.text.TabableView;
-import javax.xml.parsers.*;
-/*import javax.xml.transform.*;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;*/
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
 
-public class DOMValidateDTD {
-	static int tab;
-	private static void printTab() {
+public class XMLParser {
+	int tab;
+	public  void printTab() {
 		for (int i = 0; i < tab; i++) {
-			System.out.print(" | ");
+			System.out.print("   ");
 		}
+		System.out.print("|__");
 	}
-	private static void stepThrough (Node start)   
+	
+	public void stepThrough (Node start)   
 	{
 		for(Node child = start.getFirstChild();child != null;child = child.getNextSibling())   
 		{  
 			if(child instanceof Element)//去除多余的空白
 			{
 				Element element = (Element) child;
-//				NodeList nodeList = element.getChildNodes();
 				printTab();
 				System.out.print(element.getTagName());
-				tab++;
-//				for (int i = 0; i < nodeList.getLength(); i++) {
-//					if (nodeList.item(i).getNodeType() == Node.TEXT_NODE 
-//							&& element.getFirstChild().getNodeValue().trim() != null) {
-////						System.out.print(element.getNodeName() + " has a Text node: " 
-////								+ element.getFirstChild().getNodeValue().trim());
-//						System.out.print(element.getTextContent());
-//						break;
-//					}
-//				}
-				//System.out.print("\tValue: "+ element.getNodeValue());
 				if (child.hasAttributes()) {
-					//System.out.print("\t" + child.getNodeName() + " has attributes: ");
 					NamedNodeMap attributes = child.getAttributes();
 					for (int i = 0; i<attributes.getLength(); i++)
 					{
@@ -53,17 +44,19 @@ public class DOMValidateDTD {
 				}
 				String value = element.getFirstChild().getNodeValue().trim();
 				if (value != "" && value != null) {
-					System.out.print(" " + value);
+					System.out.print(" " + value.replace('\n', ' '));
 				}
 				System.out.println();
 			}
 			if(child != null) {
+				tab++;
 				stepThrough(child);
+				tab--;
 			}
-			tab--;
 		}
-	}   
-	public static void main(String args[]) {
+	}
+	
+	public void doParser() {
 		try{
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			factory.setValidating(true);
@@ -86,24 +79,13 @@ public class DOMValidateDTD {
 
 			Document xmlDocument = builder.parse(new FileInputStream("satvexample.xml"));
 			System.out.println("The xml version is: " + xmlDocument.getXmlVersion());
-			//System.out.println("Encoding: " + xmlDocument.getXmlEncoding());
 			xmlDocument.normalize();
 			Element root = xmlDocument.getDocumentElement();
 			System.out.println("The root element is:"   +   root.getNodeName());
-			//			NodeList children =  root.getChildNodes();
 			tab = 0;
 			stepThrough(root);
-
-			/*			DOMSource source = new DOMSource(xmlDocument);
-			StreamResult result = new StreamResult(System.out);
-			TransformerFactory tf = TransformerFactory.newInstance();
-			Transformer transformer = tf.newTransformer();
-			transformer.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, "Employee.dtd");
-			transformer.transform(source, result);*/
 		} catch (IOException e) {
 			e.printStackTrace();
-			/*		} catch (TransformerException e) {
-			e.printStackTrace();*/
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
 		} catch (SAXException e) {
