@@ -1,6 +1,6 @@
 package com.parser;
 
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.IOException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -15,8 +15,8 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 public class XMLParser {
-	final static String dtdFile = "tvschedule.dtd";
-	final static String xmlFile = "satvexample.xml";
+	final static String dtdFile = "input_file/tvschedule.dtd";
+	final static String xmlFile = "input_file/satvexample.xml";
 	
 	int tab;
 	String treeString;
@@ -91,8 +91,10 @@ public class XMLParser {
 					System.exit(0);
 				}
 			});
-
-			Document xmlDocument = builder.parse(new FileInputStream(xmlFile));
+			
+			File file = new File(xmlFile);
+			Document xmlDocument = builder.parse(file);
+			//Document xmlDocument = builder.parse(new FileInputStream(xmlFile));
 			System.out.println("Use " + dtdFile + ", the " + xmlFile + " is correct.\n");
 			//System.out.println("The xml version is: " + xmlDocument.getXmlVersion());
 			xmlDocument.normalize();

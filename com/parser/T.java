@@ -15,7 +15,8 @@ public class T {
 			XMLParser parser = new XMLParser();
 			String tree = parser.doParser();
 			System.out.println(tree);
-			out = new FileOutputStream(new File("tree.txt"));
+			System.out.println();
+			out = new FileOutputStream(new File("output_file/tree.txt"));
 			out.write(tree.getBytes());
 			out.close();
 			
@@ -26,16 +27,20 @@ public class T {
 			// Print the SQL
 			List<String> sqlList =  xml.toSQL();
 			String sqlbuffer = "";
+			System.out.println("\nThe SQLs are:");
 			for (String string : sqlList) {
 				System.out.println(string);
 				sqlbuffer += string + "\n";
 			}
-			out = new FileOutputStream(new File("sql.txt"));
+			System.out.println();
+			out = new FileOutputStream(new File("output_file/sql.txt"));
 			out.write(sqlbuffer.trim().getBytes());
 			out.close();
 			
 			// Insert to MySQL
 			xml.insert2RDB();
+			
+			System.out.println("\nThe program output is in output_file folder.");
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

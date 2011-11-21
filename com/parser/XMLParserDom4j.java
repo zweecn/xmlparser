@@ -1,9 +1,9 @@
 package com.parser;
 
 import java.io.*;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.dbutils.*;
@@ -13,11 +13,10 @@ import org.xml.sax.EntityResolver;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import com.mysql.jdbc.Connection;
 
 public class XMLParserDom4j {
-	final static String dtdFile = "tvschedule.dtd";
-	final static String xmlFile = "satvexample.xml";
+	final static String dtdFile = "input_file/tvschedule.dtd";
+	final static String xmlFile = "input_file/satvexample.xml";
 	final static String jdbcURL = "jdbc:mysql://localhost:3306/test";   
 	final static String jdbcDriver = "com.mysql.jdbc.Driver";   
 	final static String uid = "root";
@@ -42,7 +41,7 @@ public class XMLParserDom4j {
 			File file = new File(xmlFile);
 			Document doc = reader.read(file);
 			Element root = doc.getRootElement();
-			System.out.println("Use " + dtdFile + ", the " + xmlFile + " is correct.\n");
+			System.out.println("Use " + dtdFile + ", the " + xmlFile + " is correct. The root element is:" + root.getName());
 		}catch (DocumentException e) {
 			System.out.println(e.getMessage());
 			return false;
@@ -50,6 +49,7 @@ public class XMLParserDom4j {
 		return true;
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<String> toSQL() {
 		List<String> sqlList = new ArrayList<String>();
 		String dropTable = "drop table IF EXISTS `test`.`tv`;";
@@ -92,8 +92,10 @@ public class XMLParserDom4j {
 			String titleLang = null;
 			String describ = null;
 			
-			for (Iterator it = root.elementIterator(); it.hasNext();) {
-				Element chanElement = (Element) it.next();
+			//for (Iterator it = root.elementIterator(); it.hasNext();) {
+			List<Element> rootList = root.elements();
+			for (Element chanElement : rootList) {
+				//Element chanElement = (Element) it.next();
 				Attribute attribute = chanElement.attribute("CHAN");
 				chan = attribute.getValue();
 				List<Element> dayElementList = chanElement.elements();
