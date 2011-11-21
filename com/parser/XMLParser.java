@@ -26,12 +26,13 @@ public class XMLParser {
 	public void stepThrough (Node start)   
 	{
 		for(Node child = start.getFirstChild();child != null;child = child.getNextSibling())   
-		{  
+		{
 			if(child instanceof Element)//去除多余的空白
 			{
 				Element element = (Element) child;
 				printTab();
 				System.out.print(element.getTagName());
+				//String line = element.getTagName();
 				if (child.hasAttributes()) {
 					NamedNodeMap attributes = child.getAttributes();
 					for (int i = 0; i<attributes.getLength(); i++)
@@ -40,13 +41,16 @@ public class XMLParser {
 						String name = attribute.getNodeName();//获得属性名
 						String value = attribute.getNodeValue();//获得属性值
 						System.out.print(" " + name + "=" + value);
+						//line += "-" + name;
 					}
 				}
 				String value = element.getFirstChild().getNodeValue().trim();
 				if (value != "" && value != null) {
 					System.out.print(" " + value.replace('\n', ' '));
+					//line += "=" + value.replace('\n', ' ');
 				}
 				System.out.println();
+				//System.out.println(line);
 			}
 			if(child != null) {
 				tab++;
@@ -81,8 +85,8 @@ public class XMLParser {
 			System.out.println("The xml version is: " + xmlDocument.getXmlVersion());
 			xmlDocument.normalize();
 			Element root = xmlDocument.getDocumentElement();
-			System.out.println("The root element is:"   +   root.getNodeName());
-			tab = 0;
+			System.out.println(root.getNodeName());
+			tab = 1;
 			stepThrough(root);
 		} catch (IOException e) {
 			e.printStackTrace();
