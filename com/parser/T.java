@@ -8,8 +8,9 @@ public class T {
 		
 		XMLParserDom4j xml = new XMLParserDom4j();
 		//xml.readXML();
-		for (String string : xml.toMySQL()) {
-			System.out.println(string);
-		}
+//		for (String string : xml.toMySQL()) {
+//			System.out.println(string);
+//		}
+		xml.insertRDB();
 	}
 }
