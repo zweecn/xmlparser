@@ -27,7 +27,7 @@ public class XMLParser {
 	{
 		for(Node child = start.getFirstChild();child != null;child = child.getNextSibling())   
 		{
-			if(child instanceof Element)//去除多余的空白
+			if(child instanceof Element)
 			{
 				Element element = (Element) child;
 				printTab();
