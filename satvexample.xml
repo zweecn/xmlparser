@@ -1,0 +1,565 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE TVSCHEDULE SYSTEM "tvschedule.dtd" [ ]>
+<?xml-stylesheet type="text/xsl" href="http://www1.shore.net/~dmoisan/comp/xml/tvschedulehtml.xsl"?>
+
+<TVSCHEDULE NAME="Salem Access Television">
+<CHANNEL CHAN="3">
+
+<BANNER>Channel 3 Program Schedule
+Monday, April 27th--Sunday, May 2nd</BANNER>
+
+<DAY>
+<DATE>Monday, April 27th</DATE>
+<PROGRAMSLOT>
+<TIME>3:00 PM</TIME>
+<TITLE>Salem Recreation Department Basketball</TITLE>
+<DESCRIPTION>Vs. Brookline</DESCRIPTION>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>4:00 PM</TIME>
+<TITLE>Salem State College Theatre Department</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>5:00 PM</TIME>
+<TITLE>Ordination at First Church</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>6:00 PM</TIME>
+<TITLE>Men for HAWC</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>6:30 PM</TIME>
+<TITLE>Foundation for Salem Public Education 1999 Auction</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>6:45 PM</TIME>
+<TITLE LANGUAGE="sp">Jovenes en Accion</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>7:00 PM</TIME>
+<TITLE RATING="TV-G">Peabody Essex Museum Presents:  American Scrimshaw</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>8:00 PM</TIME>
+<TITLE>Hamilton Hall Lecture Series</TITLE>
+<DESCRIPTION>Geography of Peace</DESCRIPTION>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>9:00 PM</TIME>
+<TITLE>SHS Sports</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>9:30 PM</TIME>
+<TITLE>Poetry Motel</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>10:00 PM</TIME>
+<TITLE>Welfare:  For Corporations or for Families?</TITLE>
+</PROGRAMSLOT>
+</DAY>
+
+<DAY>
+<DATE>Tuesday, April 28th, 1999</DATE>
+<PROGRAMSLOT>
+<TIME>10:30 AM</TIME>
+<TITLE>The Peabody Essex Museum Presents:  Chinese Festival</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>12:00 PM</TIME>
+<TITLE>Artist Profile</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>1:00 PM</TIME>
+<TITLE>Your Money Matters</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>1:30 PM</TIME>
+<TITLE>Creating a Healthy Environment</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>2:00 PM</TIME>
+<TITLE>Focus on Health</TITLE>
+<DESCRIPTION>Heart-Healthy Strategies:  What Parents Should Know</DESCRIPTION>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>2:30 PM</TIME>
+<TITLE>Alive! Body, Mind and Spirit</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>3:00 PM</TIME>
+<TITLE RATING="TV-G">Ready, Willing, Enable</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>3:30 PM</TIME>
+<TITLE>The Foundation For Salem Public Education 1999 Auction</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>4:00 PM</TIME>
+<TITLE>Salem State College Theatre Department</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>4:30 PM</TIME>
+<TITLE>Local Cultural Council Presents:  Grant Recipients</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>5:00 PM</TIME>
+<TITLE>Welfare:  For Corporations or for Families?</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>6:00 PM</TIME>
+<TITLE>Behind the Badge</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>7:00 PM</TIME>
+<TITLE>Artsview</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>7:30 PM</TIME>
+<TITLE>285 LIVE</TITLE>
+<DESCRIPTION>Acupuncture</DESCRIPTION>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>8:30 PM</TIME>
+<TITLE>A Glimpse at the Renaissance:  King Richard's Fair</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>9:00 PM</TIME>
+<TITLE>The Woody Farrick Show</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>9:30 PM</TIME>
+<TITLE>Caught In The Web</TITLE>
+<DESCRIPTION>Internet Training--Northeastern University &amp;  Online</DESCRIPTION>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>10:00 PM</TIME>
+<TITLE>Zones of Evil</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>11:59 PM</TIME>
+<TITLE>Your Mama</TITLE>
+</PROGRAMSLOT>
+</DAY>
+
+<DAY>
+<DATE>Wednesday, April 28th, 1999</DATE>
+<PROGRAMSLOT>
+<TIME>12:00 PM</TIME>
+<TITLE>169th Annual General Conference--The Church of Latter-Day Saints (Part II)</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>2:00 PM</TIME>
+<TITLE>In Times Like These</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>3:00 PM</TIME>
+<TITLE>Jubilee Power Hour</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>4:00 PM</TIME>
+<TITLE>The Prophetic Word</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>4:30 PM</TIME>
+<TITLE LANGUAGE="sp">Dialogo Espiritual</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>5:00 PM</TIME>
+<TITLE LANGUAGE="sp">Catholic Mass in Spanish</TITLE>
+</PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>6:00 PM</TIME>
+<TITLE LANGUAGE="sp">El P.L.D. Y El Nuevo Camino</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>8:00 PM</TIME>
+<TITLE LANGUAGE="sp">Latinos</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>9:00 PM</TIME>
+<TITLE LANGUAGE="sp">Telecomunidade</TITLE>
+</PROGRAMSLOT>
+
+</DAY>
+
+<DAY>
+<DATE>Thursday, April 29th, 1999</DATE>
+<PROGRAMSLOT>
+<TIME>10:30 AM</TIME>
+<TITLE>Echos of an Era</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>12:00 PM</TIME>
+<TITLE>Poetry Motel</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>12:30 PM</TIME>
+<TITLE>Reeling...The Movie Review Show</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>1:00 PM</TIME>
+<TITLE>Behind The Badge</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>2:00 PM</TIME>
+<TITLE>Artsview</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>2:30 PM</TIME>
+<TITLE>285 Live</TITLE>
+<DESCRIPTION>Acupuncture</DESCRIPTION>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>3:30 PM</TIME>
+<TITLE>Hanscom Airshow</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>4:30 PM</TIME>
+<TITLE>Men For HAWC</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>5:00 PM</TIME>
+<TITLE>Salem State College Theatre Department</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>5:30 PM</TIME>
+<TITLE>Local Cultural Council Presents:  Grant Recipients</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>6:00 PM</TIME>
+<TITLE>Foundation For Salem Public Education 1999 Auction Promo</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>6:30 PM</TIME>
+<TITLE>A Glimpse at the Renaissance:  King Richard's Faire</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>7:00 PM</TIME>
+<TITLE>Caught In The Web</TITLE>
+<DESCRIPTION>Internet Training--Northeastern University &amp; Online</DESCRIPTION>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>7:30 PM</TIME>
+<TITLE>Hamilton Hall Lecture Series</TITLE>
+<DESCRIPTION>Geography of Peace</DESCRIPTION>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>8:30 PM</TIME>
+<TITLE>Alive!  Body, Mind and Spirit</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>9:00 PM</TIME>
+<TITLE>Artist Profile</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>9:30 PM</TIME>
+<TITLE>The Woody Farrick Show</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>10:00 PM</TIME>
+<TITLE RATING="TV-M">I'm Right, You're Wrong!</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>11:59 PM</TIME>
+<TITLE>Your Mama</TITLE>
+</PROGRAMSLOT>
+</DAY>
+
+<DAY>
+<DATE>Friday, April 23rd, 1999</DATE>
+<PROGRAMSLOT>
+<TIME>11:00 AM</TIME>
+<TITLE>Jubilee Power Hour</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>12:00 PM</TIME>
+<TITLE>In Times Like These</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>1:00 PM</TIME>
+<TITLE>The Prophetic Word</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>1:30 PM</TIME>
+<TITLE LANGUAGE="sp">Dialogo Espiritual</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>2:00 PM</TIME>
+<TITLE LANGUAGE="sp">Catholic Mass in Spanish</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>3:00 PM</TIME>
+<TITLE>169th Annual General Conference--The Church of Latter-Day Saints (Part II)</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>6:30 PM</TIME>
+<TITLE>SHS Sports</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>7:00 PM</TIME>
+<TITLE>Japanese Crown Girls Chorus</TITLE>
+</PROGRAMSLOT>
+
+</DAY>
+
+<DAY>
+<DATE>Saturday, April 24th, 1999</DATE>
+<PROGRAMSLOT>
+<TIME>10:30 AM</TIME>
+<TITLE>Your Money Matters</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>11:00 AM</TIME>
+<TITLE RATING="TV-G">Ready, Willing, Enable!</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>11:30 AM</TIME>
+<TITLE>Alive!  Body, Mind and Spirit</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>12:00 PM</TIME>
+<TITLE>Reeling...The Movie Review Show</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>1:00 PM</TIME>
+<TITLE>Salem Recreation Department Basketball Game</TITLE>
+<DESCRIPTION>Vs. Brookline</DESCRIPTION>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>5:00 PM</TIME>
+<TITLE>Japanese Crown Girls Chorus</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>10:00 PM</TIME>
+<TITLE>I'm Right,You're Wrong</TITLE>
+</PROGRAMSLOT>
+</DAY>
+
+<DAY>
+<DATE>Sunday, April 25th, 1999</DATE>
+<PROGRAMSLOT>
+<TIME>4:30 PM</TIME>
+<TITLE LANGUAGE="sp">Telecommunidade</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>5:30 PM</TIME>
+<TITLE LANGUAGE="sp">Dialogo Espiritual</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>6:00 PM</TIME>
+<TITLE>Catholic Mass in Spanish</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>7:00 PM</TIME>
+<TITLE LANGUAGE="sp">El P.L.D. Y El Nuevo Camino</TITLE>
+</PROGRAMSLOT>
+
+<PROGRAMSLOT>
+<TIME>9:00 PM</TIME>
+<TITLE LANGUAGE="sp">Latinos!</TITLE>
+</PROGRAMSLOT>
+</DAY>
+</CHANNEL>
+
+<CHANNEL CHAN="15">
+	<BANNER>Channel 15 Government/Educational Schedule Monday, April 26th--Sunday, May 2nd</BANNER>
+  <DAY>
+    <DATE>Monday, April 26th, 1999</DATE>
+    <PROGRAMSLOT>
+      <TIME>3:00 PM</TIME>
+      <TITLE>Inside Salem with George Ahmed</TITLE>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>6:00 PM</TIME>
+      <TITLE>Books Alive! XXII</TITLE>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>5:00 PM</TIME>
+      <TITLE>SHS Mock City Council and School Committee</TITLE>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>7:00 PM</TIME>
+      <TITLE>Foresight</TITLE>
+      <DESCRIPTION>Business Education and Finance</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>7:30 PM</TIME>
+      <TITLE>Massachusetts Today with George T. O'Brine</TITLE>
+      <DESCRIPTION>Presenting the March of Dimes</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>8:30 PM</TIME>
+      <TITLE>Public Hearing Regarding Transfer of Cable License</TITLE>
+    </PROGRAMSLOT>
+<PROGRAMSLOT>
+<TIME>9:30 PM</TIME>
+<TITLE>Ward 4 Gallows Hill Community Group</TITLE>
+<DESCRIPTION>4/20/99</DESCRIPTION>
+</PROGRAMSLOT>
+  </DAY>
+  <DAY>
+    <DATE>Tuesday, April 27th, 1999</DATE>
+    <PROGRAMSLOT>
+      <TIME>12:00 PM</TIME>
+      <TITLE>Salem City Council Meeting</TITLE>
+      <DESCRIPTION>Meeting of 4/22/99</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>6:30 PM</TIME>
+      <TITLE>A Conversation With Congressman Tierney</TITLE>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>7:00 PM</TIME>
+      <TITLE>Salem School Committee Meeting</TITLE>
+      <DESCRIPTION>4/26/1999</DESCRIPTION>
+    </PROGRAMSLOT>
+  </DAY>
+  <DAY>
+    <DATE>Wednesday, April 28th, 1999</DATE>
+    <PROGRAMSLOT>
+      <TIME>5:00 PM</TIME>
+      <TITLE>Public Hearing Regarding Transfer of Cable Franchise</TITLE>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>6:00 PM</TIME>
+      <TITLE>Inside Salem with George Ahmed</TITLE>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>7:00 PM</TIME>
+      <TITLE>Salem Now with Leo Jodoin</TITLE>
+      <DESCRIPTION>Salem Parks Department</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>8:00 PM</TIME>
+      <TITLE>Salem School Committee Meeting</TITLE>
+      <DESCRIPTION>4/26/1999</DESCRIPTION>
+    </PROGRAMSLOT>
+  </DAY>
+  <DAY>
+    <DATE>Thursday, April 29th, 1999</DATE>
+    <PROGRAMSLOT>
+      <TIME>11:00 AM</TIME>
+      <TITLE>On The Road With Salem Now</TITLE>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>12:00 PM</TIME>
+      <TITLE>Salem School Committee Meeting</TITLE>
+      <DESCRIPTION>4/26/1999</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>3:00 PM</TIME>
+      <TITLE>Books Alive! XXII</TITLE>
+      <DESCRIPTION>NEW!</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>5:00 PM</TIME>
+      <TITLE>Salem Now with Leo Jodoin</TITLE>
+      <DESCRIPTION>Salem Parks Department</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>6:00 PM</TIME>
+      <TITLE>Foundation for Salem Public Education 1999 Auction</TITLE>
+<DESCRIPTION>LIVE</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>7:00 PM</TIME>
+      <TITLE>Salem City Council Meeting</TITLE>
+      <DESCRIPTION>4/22/1999</DESCRIPTION>
+    </PROGRAMSLOT>
+  </DAY>
+  <DAY>
+    <DATE>Friday, April 30th, 1999</DATE>
+    <PROGRAMSLOT>
+      <TIME>11:00 AM</TIME>
+      <TITLE>Books Alive!  XXII</TITLE>
+      </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>1:00 PM</TIME>
+      <TITLE>Massachusetts Today with George T. O'Brine</TITLE>
+      <DESCRIPTION>Presenting The March of Dimes</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>2:00 PM</TIME>
+      <TITLE>Salem City Council Meeting</TITLE>
+      <DESCRIPTION>4/22/1999</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>7:00 PM</TIME>
+      <TITLE>Foresight</TITLE>
+      <DESCRIPTION>Business Education and Finance</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>7:30 PM</TIME>
+      <TITLE>Inside Salem with George Ahmed</TITLE>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>8:30 PM</TIME>
+      <TITLE>On the Road with Salem Now</TITLE>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>9:30 PM</TIME>
+      <TITLE>SHS Mock City Council and School Committee</TITLE>
+    </PROGRAMSLOT>
+  </DAY>
+  <DAY>
+    <DATE>Saturday, May 1st, 1999</DATE>
+    <PROGRAMSLOT>
+      <TIME>11:00 AM</TIME>
+      <TITLE>Books Alive! XXII</TITLE>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>11:30 AM</TIME>
+      <TITLE>Salem School Committee Meeting</TITLE>
+      <DESCRIPTION>4/26/1999</DESCRIPTION>
+    </PROGRAMSLOT>
+    <PROGRAMSLOT>
+      <TIME>2:00 PM</TIME>
+      <TITLE>SHS Mock City Council and School Committee</TITLE>
+    </PROGRAMSLOT>
+  </DAY>
+  <DAY>
+    <DATE>Sunday, May 2nd, 1999</DATE>
+    <PROGRAMSLOT>
+      <TIME>11:00 AM</TIME>
+      <TITLE>Salem City Council Meeting</TITLE>
+      <DESCRIPTION>4/22/1999</DESCRIPTION>
+    </PROGRAMSLOT>
+  </DAY>
+</CHANNEL>
+</TVSCHEDULE>
