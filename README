@@ -1,0 +1,8 @@
+Usage:
+	java -jar xml_parser.jar
+
+Environmental requirements:
+	JDK 1.6.0_13+
+	MySQL 5.5  User: root, password: 123456, has a schema "test"
+
+Code source is in src.
