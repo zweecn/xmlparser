@@ -15,12 +15,20 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 public class XMLParser {
+	final static String dtdFile = "tvschedule.dtd";
+	final static String xmlFile = "satvexample.xml";
+	
 	int tab;
-	public  void printTab() {
+	String treeString;
+	
+	public String printTab() {
+		String tabString = "";
 		for (int i = 0; i < tab; i++) {
-			System.out.print("   ");
+			tabString += "  ";
 		}
-		System.out.print("|__");
+		tabString += "|__";
+		//System.out.println(tabString);
+		return tabString;
 	}
 	
 	public void stepThrough (Node start)   
@@ -30,27 +38,29 @@ public class XMLParser {
 			if(child instanceof Element)
 			{
 				Element element = (Element) child;
-				printTab();
-				System.out.print(element.getTagName());
-				//String line = element.getTagName();
+				treeString += printTab() + element.getTagName();
+				//System.out.print(element.getTagName());
 				if (child.hasAttributes()) {
 					NamedNodeMap attributes = child.getAttributes();
 					for (int i = 0; i<attributes.getLength(); i++)
 					{
 						Node attribute = attributes.item(i);
-						String name = attribute.getNodeName();//获得属性名
-						String value = attribute.getNodeValue();//获得属性值
-						System.out.print(" " + name + "=" + value);
-						//line += "-" + name;
+						String name = attribute.getNodeName();
+						String value = attribute.getNodeValue();
+						//System.out.print(" " + name + "=" + value);
+						treeString += " " + name + "=" + value;
 					}
 				}
-				String value = element.getFirstChild().getNodeValue().trim();
-				if (value != "" && value != null) {
-					System.out.print(" " + value.replace('\n', ' '));
-					//line += "=" + value.replace('\n', ' ');
+				String value = null;
+				if (element.getFirstChild() != null) {
+					value = element.getFirstChild().getNodeValue();
 				}
-				System.out.println();
-				//System.out.println(line);
+				if (value != "" && value != null) {
+					//System.out.print(" " + value.replace('\n', ' '));
+					treeString += " " + value.replace('\n', ' ');
+				}
+				//System.out.println();
+				treeString += "\n";
 			}
 			if(child != null) {
 				tab++;
@@ -60,7 +70,8 @@ public class XMLParser {
 		}
 	}
 	
-	public void doParser() {
+	public String doParser() {
+		treeString = "";
 		try{
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			factory.setValidating(true);
@@ -81,11 +92,13 @@ public class XMLParser {
 				}
 			});
 
-			Document xmlDocument = builder.parse(new FileInputStream("satvexample.xml"));
-			System.out.println("The xml version is: " + xmlDocument.getXmlVersion());
+			Document xmlDocument = builder.parse(new FileInputStream(xmlFile));
+			System.out.println("Use " + dtdFile + ", the " + xmlFile + " is correct.\n");
+			//System.out.println("The xml version is: " + xmlDocument.getXmlVersion());
 			xmlDocument.normalize();
 			Element root = xmlDocument.getDocumentElement();
-			System.out.println(root.getNodeName());
+			//System.out.println(root.getNodeName());
+			treeString += root.getNodeName() + "\n";
 			tab = 1;
 			stepThrough(root);
 		} catch (IOException e) {
@@ -95,7 +108,9 @@ public class XMLParser {
 		} catch (SAXException e) {
 			System.out.println("XML grammar error:\n" + e.getMessage());
 			e.printStackTrace();
-		} 
+		}
+		
+		return treeString;
 	}
 	
 }

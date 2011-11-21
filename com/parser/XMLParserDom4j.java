@@ -23,7 +23,7 @@ public class XMLParserDom4j {
 	final static String uid = "root";
 	final static String pwd = "123456";
 	
-	public void readXML() {
+	public boolean verify() {
 		try {
 
 			SAXReader reader = new SAXReader();  
@@ -42,16 +42,15 @@ public class XMLParserDom4j {
 			File file = new File(xmlFile);
 			Document doc = reader.read(file);
 			Element root = doc.getRootElement();
-			for (Iterator it = root.elementIterator(); it.hasNext();) {
-				Element element = (Element) it.next();
-				System.out.println(element.getName() + ":"  + element.getTextTrim());
-			}
+			System.out.println("Use " + dtdFile + ", the " + xmlFile + " is correct.\n");
 		}catch (DocumentException e) {
 			System.out.println(e.getMessage());
+			return false;
 		}
+		return true;
 	}
 	
-	public List<String> toMySQL() {
+	public List<String> toSQL() {
 		List<String> sqlList = new ArrayList<String>();
 		String dropTable = "drop table IF EXISTS `test`.`tv`;";
 		String createTable = "CREATE  TABLE `test`.`tv` ( "
@@ -148,12 +147,12 @@ public class XMLParserDom4j {
 		return sqlList;
 	}
 	
-	public void insertRDB(){
+	public void insert2RDB(){
 		System.out.println("XML to MySQL...");
 		if (DbUtils.loadDriver(jdbcDriver)) {
 			try {
 				Connection conn = (Connection) DriverManager.getConnection(jdbcURL, uid, pwd);
-				List<String> sqlList = toMySQL();
+				List<String> sqlList = toSQL();
 				for (String sql : sqlList) {
 					QueryRunner runner = new QueryRunner();
 					if (runner.update(conn, sql) >= 0) {
